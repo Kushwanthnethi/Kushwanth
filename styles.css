@@ -1,0 +1,340 @@
+/* styles.css */
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2; /* Light grey background for a modern look */
+    color: #333; /* Dark text for better readability */
+}
+
+/* Header Styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #1f0a43; /* Zomato-like vibrant red background */
+    color: #FFF; /* White text for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo {
+    max-height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600; /* Bolder font weight */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Golden color for hover effect */
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('hero-background.jpg'); /* Add a vibrant background image */
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f0a43; /* Zomato-like vibrant red background */
+    background: #1f0a43; /* Dark overlay to enhance text visibility */
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #FFD700; /* Zomato-inspired golden button */
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Products Section Styling */
+.products-section {
+    padding: 60px 20px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2.5em;
+    color: #FF645A; /* Accent color for section title */
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-category {
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.product-item {
+    background-color: #F7F7F7;
+    border: 1px solid #DDD;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #FF645A;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.product-button:hover {
+    background-color: #E0443B; /* Slightly darker red on hover */
+}
+.more-button {
+    background-color: #A3B18A; /* Button color matching your preferred palette */
+    color: white; /* Text color */
+    padding: 15px 30px; /* Increased padding for a larger button */
+    font-size: 18px; /* Larger font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 20px auto; /* Center the button horizontally */
+    display: block; /* Display as a block-level element */
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.more-button:hover {
+    background-color: #8E9B7B; /* Darken the button color on hover */
+}
+
+
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #F2F2F2;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5em;
+    color: #FF645A;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 1.2em; /* Increased font size for emphasis */
+}
+
+.testimonial h4 {
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+/* Contact Form Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #FF645A;
+    color: #FFF;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-section input:focus, .contact-section textarea:focus {
+    border-color: #FF645A;
+    outline: none;
+}
+
+.contact-section button {
+    padding: 12px 25px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #E6BE00; /* Slightly darker gold on hover */
+    transform: translateY(-5px);
+}
+
+/* Footer Styling */
+.footer-container {
+    background-color: #333;
+    color: #FFF;
+    padding: 30px;
+    text-align: center;
+    border-top: 5px solid #FF645A;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer-container ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-container ul li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-category {
+        width: 80%;
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 80%;
+    }
+}
