@@ -15,9 +15,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    background-color: #1f0a43; /* Zomato-like vibrant red background */
-    color: #FFF; /* White text for contrast */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: transparent;
+    color: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%; /* Spans entire width */
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width */
 }
 
 .logo {
@@ -69,22 +74,25 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #1f0a43; /* Zomato-like vibrant red background */
     background: #1f0a43; /* Dark overlay to enhance text visibility */
 }
 
 .hero h1 {
+    font-family: 'Montserrat', sans-serif; /* Updated font */
     font-size: 3.5em;
     margin-bottom: 20px;
     z-index: 1;
     position: relative;
+    color: #FFF;
 }
 
 .hero p {
+    font-family: 'Poppins', sans-serif; /* Updated or retained font */
     font-size: 1.5em;
     margin-bottom: 40px;
     z-index: 1;
     position: relative;
+    color: #FFF;
 }
 
 .hero-button {
@@ -105,6 +113,7 @@ nav ul li a:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Products Section Styling */
 .products-section {
