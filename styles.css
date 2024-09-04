@@ -9,7 +9,6 @@ body {
     color: #333; /* Dark text for better readability */
 }
 
-/* Header Styling */
 .header-container {
     display: flex;
     justify-content: space-between;
