@@ -18,7 +18,7 @@
                 <ul>
                     <li><a href="#home" aria-label="Home">Home</a></li>
                     <li><a href="#shop" aria-label="Shop">Shop</a></li>
-                    <li><a href="#about" aria-label="About Us">About Us</a></li>
+                    <li><a href="#testimonials" aria-label="Testimonials">Testimonials</a></li>
                     <li><a href="#contact" aria-label="Contact">Contact</a></li>
                 </ul>
             </nav>
@@ -29,16 +29,16 @@
     <main>
 
         <!-- Hero Section -->
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="hero-content">
                 <h1>Telangana Foods</h1>
                 <p>The Store for Authentic Telangana Pickles</p>
-                <a href="#shop" class="hero-button" aria-label="Shop Now">Shop Now</a>
+                <a href="#shop" class="hero-button" aria-label="Shop">Shop Now</a>
             </div>
         </section>
 
         <!-- Non-Veg Pickles Section -->
-        <section id="non-veg-pickles" class="products-section">
+        <section id="shop" class="products-section">
             <h2>Non-Vegetarian Pickles</h2>
             <div class="products-container">
                 <div class="product-item">
@@ -85,7 +85,7 @@
         </section>
 
         <!-- Veg Pickles Section -->
-        <section id="veg-pickles" class="products-section">
+        <section id="shop" class="products-section">
             <h2>Vegetarian Pickles</h2>
             <div class="products-container">
                 <div class="product-item">
@@ -132,12 +132,16 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section class="testimonials-section">
+        <section id="testimonials" class="testimonials-section">
             <h2>Testimonials</h2>
             <div class="testimonials-container">
                 <div class="testimonial">
                     <p>"The best pickles I've ever tasted!"</p>
                     <h4><cite>- Rashmika Mandanna, TFI Actress</cite></h4>
+                </div>
+                <div class="testimonial">
+                    <p>"AMMA'S Pickle"</p>
+                    <h4><cite>- Chiranjeevi , TFI Actor</cite></h4>
                 </div>
                 <!-- Add more testimonials here -->
             </div>
@@ -171,15 +175,21 @@
     <script>
         // Function to show more non-veg pickles
         document.getElementById('non-veg-more-button').addEventListener('click', function() {
-            document.getElementById('more-non-veg-pickles').style.display = 'flex';
-            this.style.display = 'none';
-        });
+    const moreNonVegPickles = document.getElementById('more-non-veg-pickles');
+    moreNonVegPickles.style.display = 'flex';
+    moreNonVegPickles.style.opacity = '0';
+    setTimeout(() => moreNonVegPickles.style.opacity = '1', 10); // Fade-in effect
+    this.style.display = 'none';
+});
 
-        // Function to show more veg pickles
-        document.getElementById('veg-more-button').addEventListener('click', function() {
-            document.getElementById('more-veg-pickles').style.display = 'flex';
-            this.style.display = 'none';
-        });
+document.getElementById('veg-more-button').addEventListener('click', function() {
+    const moreVegPickles = document.getElementById('more-veg-pickles');
+    moreVegPickles.style.display = 'flex';
+    moreVegPickles.style.opacity = '0';
+    setTimeout(() => moreVegPickles.style.opacity = '1', 10); // Fade-in effect
+    this.style.display = 'none';
+});
+
     </script>
 </body>
 </html>
